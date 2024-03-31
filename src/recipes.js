@@ -17,11 +17,11 @@ const recipes = [
     },
     {
       id: 3,
-      title: "Lemon Dessert",
+      title: "Grilled Fish",
       price: 4.78,
-      image: "https://i.ibb.co/sm6MfcH/desert.jpg",
+      image: "https://www.lanascooking.com/wp-content/uploads/2021/07/simple-seasoned-grilled-fish-feature-1200.jpg",
       description:
-        "This comes straight from grandma's recipe book, every last ingredient has been sourced and is as authentic as can be imagined.",
+        "Grilled Fish is a delicious Mediterranean recipe made by marinating fish fillets in garlic, green chilies and a blend of spices.",
     },
   
   ];

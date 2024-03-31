@@ -16,7 +16,7 @@ function Nav() {
             <IconMenu2 size={36} className="menu-icon" onClick={toggleMenu}/>
 
             <ul className={`nav-links ${menuStatus ? "visible" : ""}`}>
-                <li><a href="/" className>Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#menu">Menu</a></li>
                 <li><a href="#reservations">Reservations</a></li>

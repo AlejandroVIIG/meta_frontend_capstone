@@ -4,11 +4,21 @@ import Booking from "./Booking";
 import Hero from "./Hero";
 import ConfirmedBooking from "./ConfirmedBooking";
 
+
+const seededRandom = function (seed) {
+    const m = 2**35 - 31;
+    const a = 185852;
+    let s = seed % m;
+    return function () {
+        return (s = s * a % m) / m;
+    };
+}
+
 const fetchAPI = function(date) {
     let result = [];
-    let random = Math.random();
+    let random = seededRandom(date.getDate());
     for(let i = 17; i <= 23; i++) {
-        if(random < 0.5) {
+        if(random() < 0.5) {
             result.push(i + ":00");
         }else {
             result.push(i + ":30");
@@ -17,9 +27,10 @@ const fetchAPI = function(date) {
     return result;
 }
 
+
 const submitAPI = function(formData) {
         return true;
-    }
+}
 
 function Main() {
     const initialState = {availableTimes: fetchAPI(new Date())};
